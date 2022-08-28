@@ -25,6 +25,13 @@ int x, y, troca;
 
 }
 
+void imprimevet(int vet[]){
+  int x;
+  for(x=0;x<1000;x++){
+    printf("%i\n", vet[x]);
+  }
+}
+
 int main(void) {
   srand(time(NULL));
   int vet[1000], x;
