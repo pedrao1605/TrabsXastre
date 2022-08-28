@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
+int main(void) {
+  srand(time(NULL));
+  int vet[1000], x;
+
+  for(x=0;x<1000;x++){
+    vet[x]=ocupa(x);
+  }
+
+  ordenar(vet);
+  imprimevet(vet);
+  media(vet);
+  mediana(vet);
+  maiorvalor(vet);
+  menorvalor(vet);
+  
+  return 0;
+}
