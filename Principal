@@ -32,6 +32,29 @@ void imprimevet(int vet[]){
   }
 }
 
+void media(int vet[]){
+  int x;
+  float media=0, soma=0;
+
+  for(x=0; x<1000; x++){
+    soma=soma+vet[x];
+  }
+
+  media=soma/1000;
+
+  printf("Media é igual a %.2f", media);
+
+  
+}
+void mediana(int vet[]){
+  int x=0;
+  float mediana=0;
+
+  mediana=(vet[500]+vet[499])/2;
+  printf("\nMediana é igual a %.2f", mediana);
+  
+}
+
 int main(void) {
   srand(time(NULL));
   int vet[1000], x;
