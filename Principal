@@ -10,6 +10,28 @@ int ocupa(int y){
   return vet[y];
 }
 
+void ordenar(int vet[]){
+int x, y, troca;
+
+  for(x=0;x<1000;x++){
+    for(y=0;y<1000;y++){
+      if(vet[x]<vet[y]){
+        troca = vet[x];
+        vet[x]=vet[y];
+        vet[y]=troca;
+      }
+    }
+  }
+
+}
+
+void imprimevet(int vet[]){
+  int x;
+  for(x=0;x<1000;x++){
+    printf("%i\n", vet[x]);
+  }
+}
+
 int main(void) {
   srand(time(NULL));
   int vet[1000], x;
