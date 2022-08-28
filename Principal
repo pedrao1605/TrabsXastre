@@ -2,6 +2,14 @@
 #include <time.h>
 #include <stdlib.h>
 
+int ocupa(int y){
+  int vet[1000];
+
+  vet[y]=rand()%5000;
+  
+  return vet[y];
+}
+
 int main(void) {
   srand(time(NULL));
   int vet[1000], x;
