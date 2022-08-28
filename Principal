@@ -55,6 +55,15 @@ void mediana(int vet[]){
   
 }
 
+void maiorvalor(int vet[]){
+  printf("\nMaior valor é igual a %i", vet[999]);
+}
+
+void menorvalor(int vet[]){
+  printf("\nMenor valor é igual a %i", vet[0]);
+}
+
+
 int main(void) {
   srand(time(NULL));
   int vet[1000], x;
